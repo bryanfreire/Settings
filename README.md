@@ -1,4 +1,10 @@
 # Settings
+
 My personal settings
 
-- VSCode keybinding and settings
+### VSCode keybindings and settings
+
+```
+ln -s $PWD/Code ~/.config/Code
+```
+
