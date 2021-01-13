@@ -1,0 +1,85 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.toggleTerminal",
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "editorFocus",
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus",
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorFocus",
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus",
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.action.splitEditor",
+        "when": "editorFocus",
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus",
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "editorFocus",
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.maximizeEditor",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.toggleZenMode",
+        "when": "editorFocus",
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction"
+    },
+    {
+        "key": "tab",
+        "command": "editor.toggleFold",
+        "when": "editorFocus && vim.mode == 'Normal'",
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "align.by.regex",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "shift+alt+a",
+        "command": "-align.by.regex",
+        "when": "editorHasSelection"
+    },
+
+]

@@ -1,0 +1,139 @@
+{
+    // VSCODE
+    "keyboard.dispatch": "keyCode",
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "monospace",
+    "editor.fontLigatures": false,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.rulers": [79],
+
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "extensions.ignoreRecommendations": true,
+
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 5000,
+    "files.eol": "\n",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true
+    },
+
+    "terminal.integrated.shell.linux": "/bin/bash",
+
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Default High Contrast",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.visible": true,
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "always",
+
+    // GIT
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.autoStash": false,
+    "git.pullTags": true,
+    "git.inputValidationSubjectLength": null,
+
+    "projectManager.git.baseFolders": [
+        "/home/bfreire/Documents"
+    ],
+
+    // VIM
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+        // GENERAL
+        // FILES
+        {
+            "before":["<leader>","f","e"], "after":[],
+            "commands":["workbench.view.explorer",],
+        },
+        {
+            "before":["<leader>","f","f"], "after":[],
+            "commands":["workbench.action.quickOpen",],
+        },
+        // GIT
+        {
+            "before":["<leader>","g","e"], "after":[],
+            "commands":["workbench.view.scm",],
+        },
+        // PROJECTS
+        {
+            "before":["<leader>","p","e"], "after":[],
+            "commands":["workbench.view.extension.project-manager",],
+        },
+        {
+            "before":["<leader>","p","p"], "after":[],
+            "commands":["projectManager.listProjectsNewWindow",],
+        },
+        // Docker
+        {
+            "before":["<leader>","d","e"], "after":[],
+            "commands":["workbench.view.extension.dockerView",],
+        },
+        // VSCODE
+        {
+            "before":["<leader>","<leader>"], "after":[],
+            "commands":["workbench.action.showCommands",],
+        },
+        {
+            "before":["<leader>","q", "r"], "after":[],
+            "commands":["workbench.action.reloadWindow",],
+        },
+        {
+            "before":["<leader>","q", "q"], "after":[],
+            "commands":["workbench.action.closeWindow",],
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // GENERAL
+        {
+            "before":[">"], "after":[">",">"], "commands":[],
+        },
+        {
+            "before":["<"], "after":["<","<"], "commands":[],
+        },
+
+    ],
+    "vim.visualModeKeyBindings": [
+        // GENERAL
+        {
+            "before":["<leader>","<space>"], "after":[],
+            "commands":["workbench.action.showCommands",],
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // GENERAL
+        {
+            "before":[">"], "after":[">","g","v"], "commands":[],
+        },
+        {
+            "before":["<"], "after":["<","g","v"], "commands":[],
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before":["j","j"], "after":["<Esc>"], "commands":[],
+        },
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [],
+    "vim.handleKeys": {
+        "<C-w>": true,
+        "<C-f>": true,
+        "<M-j>": true,
+    },
+    "vim.autoindent": false,
+    "vim.useSystemClipboard": true,
+    "vim.foldfix": true,
+    "github.gitAuthentication": false,
+}
