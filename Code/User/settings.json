@@ -90,7 +90,7 @@
         // GIT
         {
             "before":["<leader>", "g", "e"], "after":[],
-            "commands":["workbench.view.scm",],
+            "commands":["workbench.scm.focus",],
         },
         // PROJECTS
         {
