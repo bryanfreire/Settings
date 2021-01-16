@@ -1,6 +1,7 @@
 {
     // VSCODE
     "keyboard.dispatch": "keyCode",
+
     "diffEditor.ignoreTrimWhitespace": false,
 
     "editor.detectIndentation": false,
@@ -13,13 +14,13 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
 
-    "extensions.ignoreRecommendations": true,
-
     "files.autoSave": "onFocusChange",
     "files.autoSaveDelay": 5000,
     "files.eol": "\n",
+    "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "files.simpleDialog.enable": true,
     "files.exclude": {
         "**/.DS_Store": true,
         "**/.git": true,
@@ -32,12 +33,16 @@
 
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Default High Contrast",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.visible": true,
     "workbench.tree.indent": 14,
     "workbench.tree.renderIndentGuides": "always",
 
+    "extensions.ignoreRecommendations": true,
+
     // GIT
+    "github.gitAuthentication": false,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "git.autofetch": true,
@@ -45,86 +50,76 @@
     "git.pullTags": true,
     "git.inputValidationSubjectLength": null,
 
-    "projectManager.git.baseFolders": [
-        "/home/bfreire/Documents"
+    "gitProjectManager.baseProjectsFolders": [
+        "~/Documents"
     ],
+
+    // TOD OTREE
+    "todo-tree.tree.scanMode": "workspace only",
 
     // VIM
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
-        // GENERAL
+        // VSCODE
+        {
+            "before":["<leader>", "<leader>"], "after":[],
+            "commands":["workbench.action.showCommands",],
+        },
+        {
+            "before":["<leader>", "q", "r"], "after":[],
+            "commands":["workbench.action.reloadWindow",],
+        },
+        {
+            "before":["<leader>", "q", "q"], "after":[],
+            "commands":["workbench.action.closeWindow",],
+        },
+        // SEARCH
+        {
+            "before":["<leader>", "s", "e"], "after":[],
+            "commands":["workbench.action.replaceInFiles",],
+        },
         // FILES
         {
-            "before":["<leader>","f","e"], "after":[],
+            "before":["<leader>", "f", "e"], "after":[],
             "commands":["workbench.view.explorer",],
         },
         {
-            "before":["<leader>","f","f"], "after":[],
-            "commands":["workbench.action.quickOpen",],
+            "before":["<leader>", "f", "f"], "after":[],
+            "commands":["extension.findFile",],
         },
         // GIT
         {
-            "before":["<leader>","g","e"], "after":[],
+            "before":["<leader>", "g", "e"], "after":[],
             "commands":["workbench.view.scm",],
         },
         // PROJECTS
         {
-            "before":["<leader>","p","e"], "after":[],
-            "commands":["workbench.view.extension.project-manager",],
+            "before":["<leader>", "p", "p"], "after":[],
+            "commands":["gitProjectManager.openProject",],
         },
+        // TREE
         {
-            "before":["<leader>","p","p"], "after":[],
-            "commands":["projectManager.listProjectsNewWindow",],
-        },
-        // Docker
-        {
-            "before":["<leader>","d","e"], "after":[],
-            "commands":["workbench.view.extension.dockerView",],
-        },
-        // VSCODE
-        {
-            "before":["<leader>","<leader>"], "after":[],
-            "commands":["workbench.action.showCommands",],
-        },
-        {
-            "before":["<leader>","q", "r"], "after":[],
-            "commands":["workbench.action.reloadWindow",],
-        },
-        {
-            "before":["<leader>","q", "q"], "after":[],
-            "commands":["workbench.action.closeWindow",],
+            "before": ["<leader>", "t", "e"], "after": [],
+            "commands":["workbench.view.extension.todo-tree-container"]
         },
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
-        // GENERAL
-        {
-            "before":[">"], "after":[">",">"], "commands":[],
-        },
-        {
-            "before":["<"], "after":["<","<"], "commands":[],
-        },
+        { "before":[">"], "after":[">",">"], "commands":[], },
+        { "before":["<"], "after":["<","<"], "commands":[], },
 
     ],
     "vim.visualModeKeyBindings": [
-        // GENERAL
         {
             "before":["<leader>","<space>"], "after":[],
             "commands":["workbench.action.showCommands",],
         },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
-        // GENERAL
-        {
-            "before":[">"], "after":[">","g","v"], "commands":[],
-        },
-        {
-            "before":["<"], "after":["<","g","v"], "commands":[],
-        },
+        { "before":[">"], "after":[">","g","v"], "commands":[], },
+        { "before":["<"], "after":["<","g","v"], "commands":[], },
     ],
     "vim.insertModeKeyBindings": [
-        {
-            "before":["j","j"], "after":["<Esc>"], "commands":[],
-        },
+        { "before":["j","j"], "after":["<Esc>"], "commands":[], },
     ],
     "vim.insertModeKeyBindingsNonRecursive": [],
     "vim.handleKeys": {
@@ -135,5 +130,4 @@
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
     "vim.foldfix": true,
-    "github.gitAuthentication": false,
 }

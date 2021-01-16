@@ -1,0 +1,6 @@
+# Code
+# all folder except User configs
+/Code/*
+!/Code/User/snippets
+!/Code/User/keybindings.json
+!/Code/User/settings.json
