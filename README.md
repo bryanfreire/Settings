@@ -5,7 +5,7 @@ My personal settings
 ### VSCode keybindings and settings
 
 ```
-ln -s $PWD/Code ~/.config/Code
+ln -s $PWD/Code ~/.config/
 ```
 
 ### Ubuntu keybindings and settings
