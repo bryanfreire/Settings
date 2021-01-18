@@ -1,32 +1,19 @@
 {
-    // VSCODE
     "keyboard.dispatch": "keyCode",
 
-    "diffEditor.ignoreTrimWhitespace": false,
-
-    "editor.detectIndentation": false,
     "editor.fontFamily": "monospace",
-    "editor.fontLigatures": false,
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
     "editor.rulers": [79],
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
 
     "files.autoSave": "onFocusChange",
-    "files.autoSaveDelay": 5000,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "files.simpleDialog.enable": true,
     "files.exclude": {
-        "**/.DS_Store": true,
         "**/.git": true,
-        "**/.hg": true,
-        "**/.svn": true,
-        "**/CVS": true
     },
 
     "terminal.integrated.shell.linux": "/bin/bash",
@@ -35,91 +22,43 @@
     "workbench.colorTheme": "Default High Contrast",
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.visible": true,
     "workbench.tree.indent": 14,
-    "workbench.tree.renderIndentGuides": "always",
 
     "extensions.ignoreRecommendations": true,
 
-    // GIT
     "github.gitAuthentication": false,
     "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "git.autofetch": true,
-    "git.autoStash": false,
     "git.pullTags": true,
-    "git.inputValidationSubjectLength": null,
 
     "gitProjectManager.baseProjectsFolders": [
         "~/Documents"
     ],
 
-    // TOD OTREE
-    "todo-tree.tree.scanMode": "workspace only",
-
-    // VIM
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
-        // VSCODE
-        {
-            "before":["<leader>", "<leader>"], "after":[],
-            "commands":["workbench.action.showCommands",],
-        },
-        {
-            "before":["<leader>", "q", "r"], "after":[],
-            "commands":["workbench.action.reloadWindow",],
-        },
-        {
-            "before":["<leader>", "q", "q"], "after":[],
-            "commands":["workbench.action.closeWindow",],
-        },
-        // SEARCH
-        {
-            "before":["<leader>", "s", "e"], "after":[],
-            "commands":["workbench.action.replaceInFiles",],
-        },
-        // FILES
         {
             "before":["<leader>", "f", "e"], "after":[],
             "commands":["workbench.view.explorer",],
         },
         {
-            "before":["<leader>", "f", "f"], "after":[],
-            "commands":["extension.findFile",],
-        },
-        // GIT
-        {
             "before":["<leader>", "g", "e"], "after":[],
             "commands":["workbench.scm.focus",],
         },
-        // PROJECTS
         {
             "before":["<leader>", "p", "p"], "after":[],
             "commands":["gitProjectManager.openProject",],
         },
-        // TREE
-        {
-            "before": ["<leader>", "t", "e"], "after": [],
-            "commands":["workbench.view.extension.todo-tree-container"]
-        },
     ],
+    "vim.visualModeKeyBindings": [],
+    "vim.insertModeKeyBindings": [],
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before":[">"], "after":[">",">"], "commands":[], },
         { "before":["<"], "after":["<","<"], "commands":[], },
 
     ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before":["<leader>","<space>"], "after":[],
-            "commands":["workbench.action.showCommands",],
-        },
-    ],
     "vim.visualModeKeyBindingsNonRecursive": [
         { "before":[">"], "after":[">","g","v"], "commands":[], },
         { "before":["<"], "after":["<","g","v"], "commands":[], },
-    ],
-    "vim.insertModeKeyBindings": [
-        { "before":["j","j"], "after":["<Esc>"], "commands":[], },
     ],
     "vim.insertModeKeyBindingsNonRecursive": [],
     "vim.handleKeys": {
