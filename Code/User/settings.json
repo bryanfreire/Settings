@@ -55,6 +55,10 @@
             "commands":["extension.advancedNewFile",],
         },
         {
+            "before":["<leader>", "f", "w"], "after":[],
+            "commands":["workbench.action.closeActiveEditor",],
+        },
+        {
             "before":["<leader>", "g", "e"], "after":[],
             "commands":["workbench.scm.focus",],
         },
