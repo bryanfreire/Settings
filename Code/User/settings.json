@@ -47,11 +47,11 @@
             "commands":["workbench.view.explorer",],
         },
         {
-            "before":["<leader>", "f", "o"], "after":[],
+            "before":["<leader>", "f", "f"], "after":[],
             "commands":["workbench.action.quickOpen",],
         },
         {
-            "before":["<leader>", "f", "c"], "after":[],
+            "before":["<leader>", "f", "n"], "after":[],
             "commands":["extension.advancedNewFile",],
         },
         {
