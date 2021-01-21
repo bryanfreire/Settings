@@ -24,6 +24,8 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 14,
 
+    "window.zoomLevel": 0,
+
     "extensions.ignoreRecommendations": true,
 
     "github.gitAuthentication": false,

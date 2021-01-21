@@ -1,7 +1,7 @@
 [
     {
         "key": "ctrl+u",
-        "command": "workbench.action.toggleZenMode",
+        "command": "workbench.action.toggleCenteredLayout",
     },
     {
         "key": "ctrl+l",
@@ -20,11 +20,21 @@
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.action.focusPreviousGroup",
+        "command": "workbench.action.previousEditorInGroup",
         "when": "editorFocus",
     },
     {
         "key": "ctrl+l",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "editorFocus",
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "editorFocus",
+    },
+    {
+        "key": "ctrl+shift+l",
         "command": "workbench.action.focusNextGroup",
         "when": "editorFocus",
     },
@@ -35,12 +45,12 @@
     },
     {
         "key": "ctrl+k",
-        "command": "workbench.action.terminal.toggleTerminal",
+        "command": "workbench.action.terminal.split",
         "when": "terminalFocus"
     },
     {
         "key": "ctrl+j",
-        "command": "workbench.action.terminal.split",
+        "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminalFocus"
     },
     {
