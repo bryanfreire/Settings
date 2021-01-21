@@ -28,7 +28,9 @@
 
     "github.gitAuthentication": false,
     "git.confirmSync": false,
+    "git.enableSmartCommit": true,
     "git.pullTags": true,
+    "git.untrackedChanges": "separate",
 
     "gitProjectManager.baseProjectsFolders": [
         "~/Documents"
@@ -37,8 +39,20 @@
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
+            "before":["<leader>", "<leader>"], "after":[],
+            "commands":["workbench.action.showCommands",],
+        },
+        {
             "before":["<leader>", "f", "e"], "after":[],
             "commands":["workbench.view.explorer",],
+        },
+        {
+            "before":["<leader>", "f", "o"], "after":[],
+            "commands":["workbench.action.quickOpen",],
+        },
+        {
+            "before":["<leader>", "f", "c"], "after":[],
+            "commands":["extension.advancedNewFile",],
         },
         {
             "before":["<leader>", "g", "e"], "after":[],

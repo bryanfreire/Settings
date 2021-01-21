@@ -1,14 +1,51 @@
 [
     {
-        "key": "ctrl+h",
+        "key": "ctrl+u",
         "command": "workbench.action.toggleZenMode",
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "!editorFocus && !terminalFocus",
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.splitEditor",
+        "when": "editorFocus",
     },
     {
         "key": "ctrl+j",
         "command": "workbench.action.terminal.toggleTerminal",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "editorFocus",
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorFocus",
     },
     {
         "key": "ctrl+k",
-        "command": "workbench.action.maximizeEditor",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus",
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
     },
 ]
