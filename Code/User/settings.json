@@ -81,11 +81,7 @@
         { "before":["<"], "after":["<","g","v"], "commands":[], },
     ],
     "vim.insertModeKeyBindingsNonRecursive": [],
-    "vim.handleKeys": {
-        "<C-w>": true,
-        "<C-f>": true,
-        "<M-j>": true,
-    },
+    "vim.handleKeys": {},
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
     "vim.foldfix": true,
