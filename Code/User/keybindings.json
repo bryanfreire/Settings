@@ -29,6 +29,11 @@
         "when": "editorFocus",
     },
     {
+        "key": "ctrl+m",
+        "command": "workbench.action.toggleEditorWidths",
+        "when": "editorFocus",
+    },
+    {
         "key": "ctrl+k",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminalFocus"
@@ -46,6 +51,36 @@
     {
         "key": "ctrl+l",
         "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.terminal.resizePaneRight",
         "when": "terminalFocus"
     },
 ]
