@@ -7,6 +7,10 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
 
+    "emmet.includeLanguages": {
+        "vue": "html"
+    },
+
     "files.autoSave": "onFocusChange",
     "files.eol": "\n",
     "files.insertFinalNewline": true,
