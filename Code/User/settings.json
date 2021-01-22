@@ -49,6 +49,14 @@
             "commands":["workbench.action.showCommands",],
         },
         {
+            "before":["<leader>", "q", "q"], "after":[],
+            "commands":["workbench.action.closeWindow",],
+        },
+        {
+            "before":["<leader>", "q", "r"], "after":[],
+            "commands":["workbench.action.reloadWindow",],
+        },
+        {
             "before":["<leader>", "f", "e"], "after":[],
             "commands":["workbench.view.explorer",],
         },
