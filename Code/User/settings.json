@@ -3,6 +3,7 @@
 
     "editor.fontFamily": "monospace",
     "editor.rulers": [79],
+    "editor.tabSize": 2,
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -26,7 +27,7 @@
     "workbench.colorTheme": "Default High Contrast",
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 14,
+    "workbench.tree.indent": 28,
 
     "window.zoomLevel": 0,
 
