@@ -1,10 +1,13 @@
 {
     "keyboard.dispatch": "keyCode",
 
+    "editor.detectIndentation": false,
     "editor.fontFamily": "monospace",
     "editor.rulers": [79],
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
 
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
 
@@ -79,7 +82,7 @@
         },
         {
             "before":["<leader>", "p", "p"], "after":[],
-            "commands":["gitProjectManager.openProject",],
+            "commands":["gitProjectManager.openProjectNewWindow",],
         },
     ],
     "vim.visualModeKeyBindings": [],
