@@ -30,6 +30,10 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 28,
 
+    "window.newWindowDimensions": "fullscreen",
+    "window.openFoldersInNewWindow": "off",
+    "window.restoreFullscreen": true,
+    "window.restoreWindows": "none",
     "window.zoomLevel": 0,
 
     "extensions.ignoreRecommendations": true,
@@ -76,5 +80,5 @@
     },
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
-    "vim.foldfix": true,
+    "vim.foldfix": true
 }
