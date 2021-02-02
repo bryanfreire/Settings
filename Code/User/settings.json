@@ -26,7 +26,7 @@
 
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Default Light+",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": null,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 28,
 
@@ -67,7 +67,13 @@
         { "before":["<"], "after":["<","g","v"], "commands":[], },
     ],
     "vim.insertModeKeyBindingsNonRecursive": [],
-    "vim.handleKeys": {},
+    "vim.handleKeys": {
+        "C-w": false,
+        "C-s": false,
+        "C-c": false,
+        "C-v": false,
+        "C-x": false
+    },
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
     "vim.foldfix": true,
