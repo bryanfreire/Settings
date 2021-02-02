@@ -40,11 +40,6 @@
     "git.pullTags": true,
     "git.untrackedChanges": "separate",
 
-    "gitProjectManager.maxDepthRecursion": 2,
-    "gitProjectManager.baseProjectsFolders": [
-        "~/Documents"
-    ],
-
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
@@ -56,28 +51,8 @@
             "commands":["workbench.action.closeWindow",],
         },
         {
-            "before":["<leader>", "q", "r"], "after":[],
-            "commands":["workbench.action.reloadWindow",],
-        },
-        {
-            "before":["<leader>", "f", "e"], "after":[],
-            "commands":["workbench.view.explorer",],
-        },
-        {
             "before":["<leader>", "f", "f"], "after":[],
             "commands":["workbench.action.quickOpen",],
-        },
-        {
-            "before":["<leader>", "f", "n"], "after":[],
-            "commands":["extension.advancedNewFile",],
-        },
-        {
-            "before":["<leader>", "g", "e"], "after":[],
-            "commands":["workbench.scm.focus",],
-        },
-        {
-            "before":["<leader>", "p", "p"], "after":[],
-            "commands":["gitProjectManager.openProject",],
         },
     ],
     "vim.visualModeKeyBindings": [],
