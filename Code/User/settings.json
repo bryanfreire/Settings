@@ -47,16 +47,8 @@
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
-            "before":["<leader>", "<leader>"], "after":[],
-            "commands":["workbench.action.showCommands",],
-        },
-        {
             "before":["<leader>", "q", "q"], "after":[],
             "commands":["workbench.action.closeWindow",],
-        },
-        {
-            "before":["<leader>", "f", "f"], "after":[],
-            "commands":["workbench.action.quickOpen",],
         },
     ],
     "vim.visualModeKeyBindings": [],
@@ -80,5 +72,5 @@
     },
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
-    "vim.foldfix": true
+    "vim.foldfix": true,
 }
