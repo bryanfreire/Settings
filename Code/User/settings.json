@@ -50,6 +50,10 @@
             "before":["<leader>", "q", "q"], "after":[],
             "commands":["workbench.action.closeWindow",],
         },
+        {
+            "before":["<leader>", "q", "r"], "after":[],
+            "commands":["workbench.action.reloadWindow",],
+        },
     ],
     "vim.visualModeKeyBindings": [],
     "vim.insertModeKeyBindings": [],
@@ -67,7 +71,7 @@
         "<C-w>": false,
         "<C-s>": false,
         "<C-c>": false,
-        "<C-v>": false,
+        "<C-v>": true,
         "<C-x>": false
     },
     "vim.autoindent": false,
