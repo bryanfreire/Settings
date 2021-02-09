@@ -10,13 +10,6 @@
 
 
     {
-        "key": "ctrl+l",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!editorFocus && !terminalFocus",
-    },
-
-
-    {
         "key": "ctrl+u",
         "command": "workbench.action.splitEditor",
         "when": "editorFocus",
