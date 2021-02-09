@@ -72,7 +72,8 @@
         "<C-s>": false,
         "<C-c>": false,
         "<C-v>": true,
-        "<C-x>": false
+        "<C-x>": false,
+        "<C-b>": false
     },
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
