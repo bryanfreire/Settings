@@ -21,6 +21,9 @@
     "files.exclude": {
         "**/.git": true,
     },
+    "files.watcherExclude": {
+        "**/.venv/**": true
+    },
 
     "terminal.integrated.shell.linux": "/bin/bash",
 
@@ -51,8 +54,8 @@
             "commands":["workbench.action.closeWindow",],
         },
         {
-            "before":["<leader>", "q", "r"], "after":[],
-            "commands":["workbench.action.reloadWindow",],
+            "before":["<leader>", "r", "r"], "after":[],
+            "commands":["rest-client.request",],
         },
     ],
     "vim.visualModeKeyBindings": [],
@@ -78,4 +81,5 @@
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
     "vim.foldfix": true,
+    "rest-client.fontSize": 14,
 }
