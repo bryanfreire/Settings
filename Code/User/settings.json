@@ -11,6 +11,8 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
 
+    "extensions.ignoreRecommendations": true,
+
     "diffEditor.ignoreTrimWhitespace": false,
 
     "files.autoSave": "onFocusChange",
@@ -39,8 +41,6 @@
     "window.restoreWindows": "none",
     "window.zoomLevel": 0,
 
-    "extensions.ignoreRecommendations": true,
-
     "github.gitAuthentication": false,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
@@ -50,11 +50,27 @@
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
-            "before":["<leader>", "q", "q"], "after":[],
+            "before":["<leader>", "<leader>"], "after":[],
+            "commands":["workbench.action.showCommands",],
+        },
+        {
+            "before":["<leader>", "q"], "after":[],
             "commands":["workbench.action.closeWindow",],
         },
         {
-            "before":["<leader>", "r", "r"], "after":[],
+            "before":["<leader>", "e"], "after":[],
+            "commands":["workbench.explorer.fileView.focus",],
+        },
+        {
+            "before":["<leader>", "g"], "after":[],
+            "commands":["workbench.scm.focus",],
+        },
+        {
+            "before":["<leader>", "s"], "after":[],
+            "commands":["workbench.action.findInFiles"],
+        },
+        {
+            "before":["<leader>", "r"], "after":[],
             "commands":["rest-client.request",],
         },
     ],
@@ -76,10 +92,11 @@
         "<C-c>": false,
         "<C-v>": true,
         "<C-x>": false,
-        "<C-b>": false
     },
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
     "vim.foldfix": true,
-    "rest-client.fontSize": 14,
+    "explorer.autoReveal": false,
+    "search.mode": "reuseEditor",
+    "rest-client.previewColumn": "current",
 }

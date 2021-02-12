@@ -7,6 +7,10 @@
         "key": "ctrl+ñ",
         "command": "workbench.action.terminal.toggleTerminal",
     },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.toggleSidebarVisibility",
+    },
 
 
     {
