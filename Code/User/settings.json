@@ -1,5 +1,5 @@
 {
-    "keyboard.dispatch": "keyCode",
+    "breadcrumbs.icons": false,
 
     "editor.detectIndentation": true,
     "editor.fontFamily": "monospace",
@@ -8,6 +8,7 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.acceptSuggestionOnCommitCharacter": false,
 
+    "explorer.autoReveal": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
 
@@ -27,13 +28,11 @@
         "**/.venv/**": true
     },
 
-    "terminal.integrated.shell.linux": "/bin/bash",
+    "keyboard.dispatch": "keyCode",
 
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Default Light+",
-    "workbench.iconTheme": null,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 28,
+    "search.mode": "reuseEditor",
+
+    "terminal.integrated.shell.linux": "/bin/bash",
 
     "window.newWindowDimensions": "fullscreen",
     "window.openFoldersInNewWindow": "off",
@@ -41,37 +40,58 @@
     "window.restoreWindows": "none",
     "window.zoomLevel": 0,
 
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.iconTheme": null,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 28,
+    "workbench.tips.enabled": false,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.view.alwaysShowHeaderActions": true,
+
+
     "github.gitAuthentication": false,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "git.pullTags": true,
     "git.untrackedChanges": "separate",
 
+    "projectManager.git.baseFolders": [
+        "~/projects"
+    ],
+    "projectManager.git.maxDepthRecursion": 2,
+
+    "rest-client.previewColumn": "current",
+
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
-            "before":["<leader>", "<leader>"], "after":[],
+            "before":["<leader>", "c", "c"], "after":[],
             "commands":["workbench.action.showCommands",],
         },
         {
-            "before":["<leader>", "q"], "after":[],
+            "before":["<leader>", "q", "q"], "after":[],
             "commands":["workbench.action.closeWindow",],
         },
         {
-            "before":["<leader>", "e"], "after":[],
-            "commands":["workbench.explorer.fileView.focus",],
+            "before":["<leader>", "f", "f"], "after":[],
+            "commands":["breadcrumbs.toggleToOn",],
         },
         {
-            "before":["<leader>", "g"], "after":[],
+            "before":["<leader>", "g", "g"], "after":[],
             "commands":["workbench.scm.focus",],
         },
         {
-            "before":["<leader>", "s"], "after":[],
+            "before":["<leader>", "s", "s"], "after":[],
             "commands":["workbench.action.findInFiles"],
         },
         {
-            "before":["<leader>", "r"], "after":[],
+            "before":["<leader>", "r", "r"], "after":[],
             "commands":["rest-client.request",],
+        },
+        {
+            "before":["<leader>", "p", "p"], "after":[],
+            "commands":["projectManager.listProjects",],
         },
     ],
     "vim.visualModeKeyBindings": [],
@@ -93,10 +113,11 @@
         "<C-v>": true,
         "<C-x>": false,
     },
+
+    "vim.easymotion": true,
+    "vim.sneak": true,
+
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
     "vim.foldfix": true,
-    "explorer.autoReveal": false,
-    "search.mode": "reuseEditor",
-    "rest-client.previewColumn": "current",
 }

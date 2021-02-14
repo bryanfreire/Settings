@@ -7,10 +7,6 @@
         "key": "ctrl+ñ",
         "command": "workbench.action.terminal.toggleTerminal",
     },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.toggleSidebarVisibility",
-    },
 
 
     {
@@ -21,22 +17,18 @@
     {
         "key": "ctrl+h",
         "command": "workbench.action.previousEditorInGroup",
-        "when": "editorFocus",
     },
     {
         "key": "ctrl+j",
         "command": "workbench.action.focusPreviousGroup",
-        "when": "editorFocus",
     },
     {
         "key": "ctrl+k",
         "command": "workbench.action.focusNextGroup",
-        "when": "editorFocus",
     },
     {
         "key": "ctrl+l",
         "command": "workbench.action.nextEditorInGroup",
-        "when": "editorFocus",
     },
     {
         "key": "ctrl+m",
@@ -89,5 +81,11 @@
         "key": "ctrl+m",
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "terminalFocus"
+    },
+
+    {
+        "key": "h",
+        "command": "breadcrumbs.focusPreviousWithPicker",
+        "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
     },
 ]
