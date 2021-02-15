@@ -14,7 +14,9 @@
 
     "extensions.ignoreRecommendations": true,
 
+    "diffEditor.codeLens": true,
     "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
 
     "files.autoSave": "onFocusChange",
     "files.eol": "\n",
@@ -49,11 +51,15 @@
     "workbench.tree.renderIndentGuides": "always",
     "workbench.view.alwaysShowHeaderActions": true,
 
-
+    // Extensions
     "github.gitAuthentication": false,
+
+    "git.autoStash": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "git.pullTags": true,
+    "git.pruneOnFetch": true,
+    "git.showPushSuccessNotification": true,
     "git.untrackedChanges": "separate",
 
     "projectManager.git.baseFolders": [
@@ -65,41 +71,66 @@
 
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
+        // Code
         {
             "before":["<leader>", "c", "c"], "after":[],
             "commands":["workbench.action.showCommands",],
         },
         {
-            "before":["<leader>", "q", "q"], "after":[],
+            "before":["<leader>", "c", "q"], "after":[],
             "commands":["workbench.action.closeWindow",],
         },
+        {
+            "before":["<leader>", "c", "r"], "after":[],
+            "commands":["workbench.action.reloadWindow",],
+        },
+        // Files
         {
             "before":["<leader>", "f", "f"], "after":[],
             "commands":["breadcrumbs.toggleToOn",],
         },
         {
-            "before":["<leader>", "g", "g"], "after":[],
-            "commands":["workbench.scm.focus",],
+            "before":["<leader>", "f", "p"], "after":[],
+            "commands":["projectManager.listProjects",],
         },
+        {
+            "before":["<leader>", "f", "r"], "after":[],
+            "commands":["opensshremotes.openEmptyWindowInCurrentWindow",],
+        },
+        // Search
         {
             "before":["<leader>", "s", "s"], "after":[],
             "commands":["workbench.action.findInFiles"],
         },
+        // Git
+        { "before":["<leader>", "g", "g"], "commands":["git.openAllChanges",], },
+        { "before":["<leader>", "g", "d"], "commands":["git.openChange",], },
+        { "before":["<leader>", "g", "f"], "commands":["git.pull",], },
+        { "before":["<leader>", "g", "p"], "commands":["git.push",], },
+        { "before":["<leader>", "g", "c"], "commands":["git.commit",], },
+        { "before":["<leader>", "g", "s"], "commands":["git.stage",], },
+        { "before":["<leader>", "g", "u"], "commands":["git.unstage",], },
+        { "before":["<leader>", "g", "r"], "commands":["git.clean",], },
+        // Extensions
         {
-            "before":["<leader>", "r", "r"], "after":[],
+            "before":["<leader>", "e", "r"], "after":[],
             "commands":["rest-client.request",],
         },
-        {
-            "before":["<leader>", "p", "p"], "after":[],
-            "commands":["projectManager.listProjects",],
-        },
     ],
-    "vim.visualModeKeyBindings": [],
+    "vim.visualModeKeyBindings": [
+        // Git
+        { "before":["<leader>", "g", "s"], "commands":["git.stageSelectedRanges",], },
+        { "before":["<leader>", "g", "u"], "commands":["git.unstageSelectedRanges",], },
+        { "before":["<leader>", "g", "r"], "commands":["git.revertSelectedRanges",], },
+    ],
     "vim.insertModeKeyBindings": [],
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before":[">"], "after":[">",">"], "commands":[], },
         { "before":["<"], "after":["<","<"], "commands":[], },
-
+        { "before":["<leader>","h"], "after":["<leader>","<leader>","h"], "commands":[], },
+        { "before":["<leader>","j"], "after":["<leader>","<leader>","j"], "commands":[], },
+        { "before":["<leader>","k"], "after":["<leader>","<leader>","k"], "commands":[], },
+        { "before":["<leader>","l"], "after":["<leader>","<leader>","l"], "commands":[], },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         { "before":[">"], "after":[">","g","v"], "commands":[], },
@@ -115,7 +146,7 @@
     },
 
     "vim.easymotion": true,
-    "vim.sneak": true,
+    // "vim.sneak": true,
 
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
