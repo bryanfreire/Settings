@@ -44,6 +44,7 @@
 
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Default Light+",
+    "workbench.editor.pinnedTabSizing": "compact",
     "workbench.iconTheme": null,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 28,
@@ -62,6 +63,13 @@
     "git.showPushSuccessNotification": true,
     "git.untrackedChanges": "separate",
 
+    "indentRainbow.colors": [
+        "rgba(127,255,127,0.2)",
+        "rgba(255,127,255,0.2)",
+        "rgba(79,236,236,0.2)",
+        "rgba(255,255,64,0.2)",
+    ],
+
     "projectManager.git.baseFolders": [
         "~/projects"
     ],
@@ -72,36 +80,21 @@
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         // Code
-        {
-            "before":["<leader>", "c", "c"], "after":[],
-            "commands":["workbench.action.showCommands",],
-        },
-        {
-            "before":["<leader>", "c", "q"], "after":[],
-            "commands":["workbench.action.closeWindow",],
-        },
-        {
-            "before":["<leader>", "c", "r"], "after":[],
-            "commands":["workbench.action.reloadWindow",],
-        },
+        { "before":["<leader>", "c", "c"], "commands":["workbench.action.showCommands",], },
+        { "before":["<leader>", "c", "q"], "commands":["workbench.action.closeWindow",], },
+        { "before":["<leader>", "c", "r"], "commands":["workbench.action.reloadWindow",], },
         // Files
-        {
-            "before":["<leader>", "f", "f"], "after":[],
-            "commands":["breadcrumbs.toggleToOn",],
-        },
-        {
-            "before":["<leader>", "f", "p"], "after":[],
-            "commands":["projectManager.listProjects",],
-        },
+        { "before":["<leader>", "f", "f"], "commands":["breadcrumbs.toggleToOn",], },
+        { "before":["<leader>", "f", "p"], "commands":["projectManager.listProjects",], },
+        { "before":["<leader>", "f", "n"], "commands":["extension.advancedNewFile",], },
         {
             "before":["<leader>", "f", "r"], "after":[],
             "commands":["opensshremotes.openEmptyWindowInCurrentWindow",],
         },
+
         // Search
         {
-            "before":["<leader>", "s", "s"], "after":[],
-            "commands":["workbench.action.findInFiles"],
-        },
+            "before":["<leader>", "s", "s"], "commands":["workbench.action.findInFiles"], },
         // Git
         { "before":["<leader>", "g", "g"], "commands":["git.openAllChanges",], },
         { "before":["<leader>", "g", "d"], "commands":["git.openChange",], },
@@ -111,11 +104,11 @@
         { "before":["<leader>", "g", "s"], "commands":["git.stage",], },
         { "before":["<leader>", "g", "u"], "commands":["git.unstage",], },
         { "before":["<leader>", "g", "r"], "commands":["git.clean",], },
+        { "before":["<leader>", "g", "j"], "commands":["gitlens.diffWithPrevious",], },
+        { "before":["<leader>", "g", "k"], "commands":["gitlens.diffWithNext",], },
         // Extensions
-        {
-            "before":["<leader>", "e", "r"], "after":[],
-            "commands":["rest-client.request",],
-        },
+        { "before":["<leader>", "e", "r"], "commands":["rest-client.request",], },
+        { "before":["<leader>", "e", "p", "r"], "commands":["python.execInTerminal",], },
     ],
     "vim.visualModeKeyBindings": [
         // Git
