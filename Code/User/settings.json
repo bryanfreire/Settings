@@ -103,6 +103,7 @@
         { "before":["<leader>", "g", "p"], "commands":["git.push",], },
         { "before":["<leader>", "g", "c"], "commands":["git.commit",], },
         { "before":["<leader>", "g", "s"], "commands":["git.stage",], },
+        { "before":["<leader>", "g", "S"], "commands":["git.stageAllUntracked",], },
         { "before":["<leader>", "g", "u"], "commands":["git.unstage",], },
         { "before":["<leader>", "g", "r"], "commands":["git.clean",], },
         { "before":["<leader>", "g", "j"], "commands":["gitlens.diffWithPrevious",], },
