@@ -96,6 +96,7 @@
         {
             "before":["<leader>", "s", "s"], "commands":["workbench.action.findInFiles"], },
         // Git
+        { "before":["<leader>", "g", "e"], "commands":["workbench.scm.focus",], },
         { "before":["<leader>", "g", "g"], "commands":["git.openAllChanges",], },
         { "before":["<leader>", "g", "d"], "commands":["git.openChange",], },
         { "before":["<leader>", "g", "f"], "commands":["git.pull",], },
