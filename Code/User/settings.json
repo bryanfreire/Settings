@@ -40,7 +40,6 @@
     "window.openFoldersInNewWindow": "off",
     "window.restoreFullscreen": true,
     "window.restoreWindows": "none",
-    "window.zoomLevel": 0,
 
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Default Light+",
@@ -64,18 +63,26 @@
     "git.untrackedChanges": "separate",
 
     "indentRainbow.colors": [
-        "rgba(127,255,127,0.2)",
-        "rgba(255,127,255,0.2)",
-        "rgba(79,236,236,0.2)",
-        "rgba(255,255,64,0.2)",
+        "rgba(255,0,0,0.1)",
+        "rgba(0,255,0,0.1)",
+        "rgba(0,0,255,0.1)",
+        "rgba(255,255,0,0.1)",
+        "rgba(255,0,255,0.1)",
+        "rgba(0,255,255,0.1)",
+    ],
+    "bracket-pair-colorizer-2.colors": [
+        "rgba(255,0,0,1)",
+        "rgba(0,255,0,1)",
+        // "rgba(0,0,255,1)",
+        // "rgba(255,255,0,1)",
+        "rgba(255,0,255,1)",
+        "rgba(0,255,255,1)",
     ],
 
     "projectManager.git.baseFolders": [
         "~/projects"
     ],
     "projectManager.git.maxDepthRecursion": 2,
-
-    "rest-client.previewColumn": "current",
 
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
@@ -85,32 +92,39 @@
         { "before":["<leader>", "c", "r"], "commands":["workbench.action.reloadWindow",], },
         // Files
         { "before":["<leader>", "f", "f"], "commands":["breadcrumbs.toggleToOn",], },
-        { "before":["<leader>", "f", "p"], "commands":["projectManager.listProjects",], },
-        { "before":["<leader>", "f", "n"], "commands":["extension.advancedNewFile",], },
         {
             "before":["<leader>", "f", "r"], "after":[],
             "commands":["opensshremotes.openEmptyWindowInCurrentWindow",],
         },
+        { "before":["<leader>", "f", "n"], "commands":["extension.advancedNewFile",], },
 
         // Search
         {
             "before":["<leader>", "s", "s"], "commands":["workbench.action.findInFiles"], },
         // Git
         { "before":["<leader>", "g", "e"], "commands":["workbench.scm.focus",], },
-        { "before":["<leader>", "g", "g"], "commands":["git.openAllChanges",], },
-        { "before":["<leader>", "g", "d"], "commands":["git.openChange",], },
-        { "before":["<leader>", "g", "f"], "commands":["git.pull",], },
-        { "before":["<leader>", "g", "p"], "commands":["git.push",], },
+        { "before":["<leader>", "g", "G"], "commands":["git.openAllChanges",], },
+        { "before":["<leader>", "g", "g"], "commands":["git.openChange",], },
+        { "before":["<leader>", "g", "p"], "commands":["git.pull",], },
+        { "before":["<leader>", "g", "P"], "commands":["git.push",], },
         { "before":["<leader>", "g", "c"], "commands":["git.commit",], },
         { "before":["<leader>", "g", "s"], "commands":["git.stage",], },
         { "before":["<leader>", "g", "S"], "commands":["git.stageAllUntracked",], },
+        { "before":["<leader>", "g", "t"], "commands":["git.stashIncludeUntracked",], },
+        { "before":["<leader>", "g", "T"], "commands":["git.stashPopLatest",], },
         { "before":["<leader>", "g", "u"], "commands":["git.unstage",], },
-        { "before":["<leader>", "g", "r"], "commands":["git.clean",], },
-        { "before":["<leader>", "g", "j"], "commands":["gitlens.diffWithPrevious",], },
-        { "before":["<leader>", "g", "k"], "commands":["gitlens.diffWithNext",], },
+        { "before":["<leader>", "g", "U"], "commands":["git.clean",], },
+        { "before":["<leader>", "g", "b"], "commands":["git.checkout",], },
+        { "before":["<leader>", "g", "B"], "commands":["git.branchFrom",], },
+        { "before":["<leader>", "g", "d"], "commands":["git.deleteBranch",], },
+        { "before":["<leader>", "g", "m"], "commands":["git.merge",], },
+
+        { "before":["<leader>", "g", "f", "i"], "commands":["gitflow.init",], },
+        { "before":["<leader>", "g", "f", "f"], "commands":["gitflow.feature.start",], },
+        { "before":["<leader>", "g", "f", "r"], "commands":["gitflow.release.start",], },
+        { "before":["<leader>", "g", "f", "F"], "commands":["gitflow.finish",], },
         // Extensions
         { "before":["<leader>", "e", "r"], "commands":["rest-client.request",], },
-        { "before":["<leader>", "e", "p", "r"], "commands":["python.execInTerminal",], },
     ],
     "vim.visualModeKeyBindings": [
         // Git
@@ -137,11 +151,10 @@
         "<C-s>": false,
         "<C-c>": false,
         "<C-v>": true,
-        "<C-x>": false,
+        "<C-x>": true,
     },
 
     "vim.easymotion": true,
-    // "vim.sneak": true,
 
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,

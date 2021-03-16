@@ -16,19 +16,19 @@
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.action.previousEditorInGroup",
-    },
-    {
-        "key": "ctrl+j",
         "command": "workbench.action.focusPreviousGroup",
     },
     {
+        "key": "ctrl+j",
+        "command": "workbench.action.previousEditorInGroup",
+    },
+    {
         "key": "ctrl+k",
-        "command": "workbench.action.focusNextGroup",
+        "command": "workbench.action.nextEditorInGroup",
     },
     {
         "key": "ctrl+l",
-        "command": "workbench.action.nextEditorInGroup",
+        "command": "workbench.action.focusNextGroup",
     },
     {
         "key": "ctrl+m",
