@@ -3,7 +3,7 @@
 
     "editor.detectIndentation": true,
     "editor.fontFamily": "monospace",
-    "editor.rulers": [99],
+    "editor.rulers": [119],
     "editor.tabSize": 4,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.acceptSuggestionOnCommitCharacter": false,
@@ -31,8 +31,6 @@
     },
 
     "keyboard.dispatch": "keyCode",
-
-    "search.mode": "reuseEditor",
 
     "terminal.integrated.shell.linux": "/bin/bash",
 
@@ -63,20 +61,25 @@
     "git.untrackedChanges": "separate",
 
     "indentRainbow.colors": [
-        "rgba(255,0,0,0.1)",
-        "rgba(0,255,0,0.1)",
-        "rgba(0,0,255,0.1)",
-        "rgba(255,255,0,0.1)",
-        "rgba(255,0,255,0.1)",
-        "rgba(0,255,255,0.1)",
+        "rgba(255,0,0,0.2)",
+        "rgba(0,255,0,0.2)",
+        "rgba(0,0,255,0.2)",
+        // "rgba(255,255,0,0.2)",
+        "rgba(255,0,255,0.2)",
+        "rgba(0,255,255,0.2)",
     ],
     "bracket-pair-colorizer-2.colors": [
         "rgba(255,0,0,1)",
         "rgba(0,255,0,1)",
-        // "rgba(0,0,255,1)",
+        "rgba(0,0,255,1)",
         // "rgba(255,255,0,1)",
         "rgba(255,0,255,1)",
         "rgba(0,255,255,1)",
+    ],
+    "bracket-pair-colorizer-2.scopeLineCSS": [
+        "borderStyle : solid",
+        "borderWidth : 3px",
+        "borderColor : {color}",
     ],
 
     "projectManager.git.baseFolders": [
@@ -97,28 +100,26 @@
             "commands":["opensshremotes.openEmptyWindowInCurrentWindow",],
         },
         { "before":["<leader>", "f", "n"], "commands":["extension.advancedNewFile",], },
-
         // Search
-        {
-            "before":["<leader>", "s", "s"], "commands":["workbench.action.findInFiles"], },
+        { "before":["<leader>", "s", "s"], "commands":["workbench.action.findInFiles"], },
         // Git
         { "before":["<leader>", "g", "e"], "commands":["workbench.scm.focus",], },
-        { "before":["<leader>", "g", "G"], "commands":["git.openAllChanges",], },
         { "before":["<leader>", "g", "g"], "commands":["git.openChange",], },
+        { "before":["<leader>", "g", "G"], "commands":["git.openAllChanges",], },
         { "before":["<leader>", "g", "p"], "commands":["git.pull",], },
         { "before":["<leader>", "g", "P"], "commands":["git.push",], },
         { "before":["<leader>", "g", "c"], "commands":["git.commit",], },
+        { "before":["<leader>", "g", "C"], "commands":["git.checkout",], },
         { "before":["<leader>", "g", "s"], "commands":["git.stage",], },
         { "before":["<leader>", "g", "S"], "commands":["git.stageAllUntracked",], },
         { "before":["<leader>", "g", "t"], "commands":["git.stashIncludeUntracked",], },
         { "before":["<leader>", "g", "T"], "commands":["git.stashPopLatest",], },
         { "before":["<leader>", "g", "u"], "commands":["git.unstage",], },
         { "before":["<leader>", "g", "U"], "commands":["git.clean",], },
-        { "before":["<leader>", "g", "b"], "commands":["git.checkout",], },
-        { "before":["<leader>", "g", "B"], "commands":["git.branchFrom",], },
-        { "before":["<leader>", "g", "d"], "commands":["git.deleteBranch",], },
+        { "before":["<leader>", "g", "b"], "commands":["git.branchFrom",], },
+        { "before":["<leader>", "g", "B"], "commands":["git.deleteBranch",], },
         { "before":["<leader>", "g", "m"], "commands":["git.merge",], },
-
+        // Flow
         { "before":["<leader>", "g", "f", "i"], "commands":["gitflow.init",], },
         { "before":["<leader>", "g", "f", "f"], "commands":["gitflow.feature.start",], },
         { "before":["<leader>", "g", "f", "r"], "commands":["gitflow.release.start",], },
@@ -149,9 +150,6 @@
     "vim.handleKeys": {
         "<C-w>": false,
         "<C-s>": false,
-        "<C-c>": false,
-        "<C-v>": true,
-        "<C-x>": true,
     },
 
     "vim.easymotion": true,
@@ -159,4 +157,11 @@
     "vim.autoindent": false,
     "vim.useSystemClipboard": true,
     "vim.foldfix": true,
+    "vim.replaceWithRegister": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
 }

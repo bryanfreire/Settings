@@ -4,13 +4,13 @@
         "command": "workbench.action.toggleCenteredLayout",
     },
     {
-        "key": "ctrl+ñ",
+        "key": "ctrl+;",
         "command": "workbench.action.terminal.toggleTerminal",
     },
 
 
     {
-        "key": "ctrl+u",
+        "key": "ctrl+i",
         "command": "workbench.action.splitEditor",
         "when": "editorFocus",
     },
@@ -38,18 +38,8 @@
 
 
     {
-        "key": "ctrl+u",
-        "command": "workbench.action.terminal.split",
-        "when": "terminalFocus"
-    },
-    {
         "key": "ctrl+i",
-        "command": "workbench.action.terminal.resizePaneLeft",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+o",
-        "command": "workbench.action.terminal.resizePaneRight",
+        "command": "workbench.action.terminal.split",
         "when": "terminalFocus"
     },
     {
