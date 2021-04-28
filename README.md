@@ -1,6 +1,6 @@
 # Settings
 
-My personal settings
+My settings
 
 ### VSCode keybindings and settings
 
@@ -11,5 +11,5 @@ ln -s $PWD/Code ~/.config/
 ### Ubuntu keybindings and settings
 
 ```
-dconf load / < ./ubuntu.conf
+dconf load /org/gnome/ < ubuntu.ini
 ```
